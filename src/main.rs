@@ -1,3 +1,10 @@
+// import cli crate
+use cratoxide::cli::parser::parse_args; 
+
 fn main() {
-    println!("Hello, world!");
+    let args = parse_args();
+    println!("Parsed arguments: {:?}", args);
+
+    // Here you can use the parsed arguments
+
 }
